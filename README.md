@@ -37,7 +37,7 @@ Download and store the Volterra certificate:
 
 Obtain the api_p12_file from your Volterra console or administrator.
 Store the certificate file securely on your local machine.
-Use this to store the password on your local machine " export VES_P12_PASSWORD=<password> "
+Use this to store the password on your local machine " export VES_P12_PASSWORD= <password> "
 
 Specify the Volterra API URL:
 
