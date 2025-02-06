@@ -7,6 +7,6 @@ terraform {
   }
 }
 provider "volterra" {
-  api_p12_file     = "/Users/n.saaraala/terraform-volterra/f5cs-soc.console.ves.volterra.io.api-creds.p12"
-  url              = "https://f5cs-soc.console.ves.volterra.io/api"
+  api_p12_file     = "<cert path>"
+  url              = "https://<tenant>.console.ves.volterra.io/api"
 }
