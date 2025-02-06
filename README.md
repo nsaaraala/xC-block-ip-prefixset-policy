@@ -16,6 +16,33 @@ Before you can use this Terraform configuration, you need to have the following:
 - **Terraform** installed on your local machine.
 - A **Volterra** account with API access and proper authentication credentials.
 - The **`ips.txt` file** containing the IP addresses that you want to block. The file should have one IP address per line (e.g., `192.168.1.1`).
+## Provider Configuration
+
+This Terraform code uses the **Volterra provider** to interact with the Volterra API. The required provider configuration is as follows:
+terraform {
+  required_providers {
+    volterra = {
+      source = "volterraedge/volterra"
+      version = "0.11.30"
+    }
+  }
+}
+
+provider "volterra" {
+  api_p12_file = "<cert path>"
+  url          = "https://<tenant>.console.ves.volterra.io/api"
+}
+Steps to Setup the Provider : 
+Download and store the Volterra certificate:
+
+Obtain the api_p12_file from your Volterra console or administrator.
+Store the certificate file securely on your local machine.
+Use this to store the password on your local machine " export VES_P12_PASSWORD=<password> "
+
+Specify the Volterra API URL:
+
+Replace <tenant> in the URL with your Volterra tenant name.
+The URL will be in the format https://<tenant>.console.ves.volterra.io/api.
 
 ## Usage
 
