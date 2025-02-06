@@ -20,24 +20,10 @@ Before you can use this Terraform configuration, you need to have the following:
 
 This Terraform code uses the **Volterra provider** to interact with the Volterra API. The required provider configuration is as follows:
 
-
-terraform {
-  required_providers {
-    volterra = {
-      source = "volterraedge/volterra"
-      version = "0.11.30"
-    }
-  }
-}
-
-provider "volterra" {
-  api_p12_file = "<cert path>"
-  url          = "https://<tenant>.console.ves.volterra.io/api"
-}
-
 Steps to Setup the Provider : 
 
-Download and store the Volterra certificate:
+Download and store the Volterra certificate from this link : https://docs.cloud.f5.com/docs-v2/administration/how-tos/user-mgmt/Credentials
+
 
 Obtain the api_p12_file from your Volterra console or administrator.
 
